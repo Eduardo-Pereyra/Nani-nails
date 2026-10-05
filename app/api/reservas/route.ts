@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { db } from "../../../lib/db";
+import { getDb } from "../../../lib/db";
 import { SERVICIOS } from "../../../lib/servicios";
 
 const send = (to: string, subject: string, text: string) =>
@@ -19,6 +19,9 @@ export async function POST(req: Request) {
       !/^\d{4}-\d{2}-\d{2}$/.test(fecha) || !/^\d{2}:\d{2}$/.test(hora) ||
       !s(nombre, 80) || !/^[\d\s+()-]{8,20}$/.test(celular ?? "") ||
       !s(mail, 120) || !/^\S+@\S+\.\S+$/.test(mail)) return bad("Revisá los datos ingresados.");
+
+  const db = getDb();
+  if (!db) return bad("Servicio de reservas no disponible.", 503);
 
   // Toma atómica: solo actualiza si el turno existe y sigue libre
   const { data, error } = await db.from("turnos")
