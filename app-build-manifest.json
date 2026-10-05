@@ -1,0 +1,25 @@
+{
+  "pages": {
+    "/api/reservas/route": [
+      "static/chunks/webpack-23055d52f9c766c3.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/58-f028b11b68019a4b.js",
+      "static/chunks/main-app-c1532ef50aa77d54.js",
+      "static/chunks/app/api/reservas/route-cfcad02bc749ec84.js"
+    ],
+    "/api/disponibilidad/route": [
+      "static/chunks/webpack-23055d52f9c766c3.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/58-f028b11b68019a4b.js",
+      "static/chunks/main-app-c1532ef50aa77d54.js",
+      "static/chunks/app/api/disponibilidad/route-cfcad02bc749ec84.js"
+    ],
+    "/api/admin/turnos/route": [
+      "static/chunks/webpack-23055d52f9c766c3.js",
+      "static/chunks/4bd1b696-c023c6e3521b1417.js",
+      "static/chunks/58-f028b11b68019a4b.js",
+      "static/chunks/main-app-c1532ef50aa77d54.js",
+      "static/chunks/app/api/admin/turnos/route-cfcad02bc749ec84.js"
+    ]
+  }
+}

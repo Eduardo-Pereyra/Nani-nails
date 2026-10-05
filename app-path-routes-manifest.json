@@ -1,0 +1,5 @@
+{
+  "/api/reservas/route": "/api/reservas",
+  "/api/disponibilidad/route": "/api/disponibilidad",
+  "/api/admin/turnos/route": "/api/admin/turnos"
+}
