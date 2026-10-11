@@ -1,0 +1,3 @@
+git rm netlify.toml app-build-manifest.json build-manifest.json build_id.txt export-marker.json images-manifest.json next-minimal-server.js.nft.json next-server.js.nft.json prerender-manifest.json react-loadable-manifest.json required-server-files.json routes-manifest.json trace.txt
+git commit -m "Limpieza"
+git push
